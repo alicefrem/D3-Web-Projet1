@@ -5,8 +5,12 @@
     <title>This is my web page</title>
 <link rel="stylesheet" href="styles/reset.css">
 <link rel="stylesheet" href="styles/main.css">
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Playfair+Display+SC|Quicksand|Satisfy|Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Playfair+Display+SC|Quicksand|Satisfy|Rozha+One" rel="stylesheet">
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.lettering.js"></script>
+<script type="text/javascript" src="scripts/jquery.colorbox-min.js"></script>
 
+<link rel="stylesheet" href="styles/colorbox.css">
   </head>
   <body>
 
@@ -14,7 +18,7 @@
 <header>
       <div class="header-content">
           <h1>Alice Frémont</h1>
-          <p>GRAPHISTE</p>
+          <p>DESIGN GRAPHIQUE</p>
       </div>
     </header>
 
@@ -24,7 +28,7 @@
        <h2>BIOGRAPHIE</h2>
 
          <p>
-         J'ai 23 ans et je vis à Bordeaux depuis près de 5 ans maintenant mais j'ai surtout vécu en Charente, près d'Angoulême. J'ai des origines finlandaises de par ma mère, auxquelles je suis très attachée et très fière! Je vais régulièrement rendre visite à ma famille maternelle en Finlande. Mise à part ce magnifique pays, j'ai eu la chance de découvrir d'autres pays tels que les États-Unis, l'Australie, le Canada... bref, j'adore voyager!
+         J'ai 24 ans et je vis à Bordeaux depuis près de 5 ans maintenant mais j'ai surtout vécu en Charente, près d'Angoulême. J'ai des origines finlandaises de par ma mère, auxquelles je suis très attachée et très fière! Je vais régulièrement rendre visite à ma famille maternelle en Finlande. Mise à part ce magnifique pays, j'ai eu la chance de découvrir d'autres pays tels que les États-Unis, l'Australie, le Canada... bref, j'adore voyager!
          </p>
          <p>Je suis depuis longtemps passionnée par le monde du design et plus particulièrement le graphisme c'est pourquoi je me suis lancée dans ce domaine depuis maintenant 3 ans. C'est avec grande motivation que je me lève chaque matin pour apprendre chaque jour et développer ma créativité. Je m'intéresse à tous les domaines qu'englobe le graphisme mais je suis d'autant plus attirée par l'identité visuelle et l'édition. Je vous laisse parcourir ma page et espère que vous y prendrez plaisir!
          </p>
@@ -41,17 +45,35 @@
 
       <div class="comp-content">
         <img src="images/typo2.png" alt=" ">
+
         <h3>Typographie</h3>
+
+        <li><a class='gallery-typo' href='images/image04.jpg'>Projet 1</a></li>
+        <li><a class='gallery-typo' href='images/image05.jpg'>Projet 2</a></li>
+
+
         <a href="#">Read More</a>
       </div>
       <div class="comp-content">
         <img src="images/idvisu2.png" alt=" ">
         <h3>Identité visuelle</h3>
-        <a href="#">Read More</a>
+
+
+       <li><a class='gallery-iden' href='images/image01.jpg'>Projet 1</a></li>
+       <li><a class='gallery-iden' href='images/image02.jpg'>Projet 2</a></li>
+       <li><a class='gallery-iden' href='images/image03.jpg'>Projet 3</a></li>
+
+       <a href="#">Read More</a>
       </div>
       <div class="comp-content">
         <img src="images/bg-cerf-320.jpg" alt=" ">
+
         <h3>Illustration</h3>
+
+        <li><a class='gallery-illu' href='images/image06.jpg'>Projet 1</a></li>
+        <li><a class='gallery-illu' href='images/image07.jpg'>Projet 2</a></li>
+        <li><a class='gallery-illu' href='images/image08.jpg'>Projet 3</a></li>
+
         <a href="#">Read More</a>
       </div>
 </div>
@@ -118,5 +140,11 @@
 
     </footer>
 
- </body>
+    <script>
+    $('a.gallery-typo').colorbox({rel:'gal1'});
+    $('a.gallery-iden').colorbox({rel:'gal2'});
+    $('a.gallery-illu').colorbox({rel:'gal3'});
+</script>
+
+</body>
 </html>
